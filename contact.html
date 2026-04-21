@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | MIDAS - Consultantul tau virtual</title>
+  <meta name="description" content="Contactează echipa MIDAS din Suceava pentru site-uri, chatboti sau automatizări. Răspundem în 24 de ore și prima consultație este gratuită." />
+  <meta property="og:title" content="Contact | MIDAS - Consultantul tau virtual" />
+  <meta property="og:description" content="Contactează echipa MIDAS din Suceava pentru site-uri, chatboti sau automatizări. Răspundem în 24 de ore și prima consultație este gratuită." />
+  <meta property="og:image" content="https://i.pinimg.com/1200x/57/9c/79/579c794e59c968ee4bbd2e570954ec44.jpg" />
+  <meta property="og:type" content="website" />
+  <meta name="robots" content="index, follow" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: "#1E3A8A",
+            secondary: "#3B6FD4",
+            accent: "#0d2260",
+            light: "#f5f5f5",
+            dark: "#0c0e13",
+          },
+          backgroundImage: {
+            "dark-radial-right": "radial-gradient(at center right, #0d2260 10%, #020307 75%)",
+            "dark-radial-left": "radial-gradient(at center left, #0d2260 10%, #020307 75%)",
+            "dark-radial-top": "radial-gradient(at top center, #0d2260 10%, #020307 75%)",
+            "dark-radial-bottom": "radial-gradient(at bottom center, #0d2260 10%, #020307 75%)",
+            "dark-silver-radial": "radial-gradient(at center, #1a1a1a 10%, #2a2a2a 90%)",
+            "card-dark": "linear-gradient(180deg, #1a1f2b 0%, #0c0e13 100%)",
+            "card-dark-hover": "linear-gradient(180deg, #2a3040 0%, #1a1f2b 100%)",
+            "primary-blend": "linear-gradient(135deg, #1E3A8A 0%, #020307 100%)",
+            "accent-blend": "linear-gradient(135deg, #0d2260 0%, #000000 100%)",
+          },
+        },
+      },
+    };
+  </script>
+</head>
+<body class="bg-dark text-light">
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <a href="index.html" class="text-white font-extrabold text-xl tracking-tight">
+          <span class="gradient-text">MIDAS</span>
+          <span class="text-white font-light text-sm ml-2 hidden sm:inline">Consultantul tau virtual</span>
+        </a>
+        <div class="hidden md:flex items-center gap-1">
+          <a href="index.html" class="nav-link" data-page="index.html">Acasă</a>
+          <a href="about.html" class="nav-link" data-page="about.html">Despre</a>
+          <a href="services.html" class="nav-link" data-page="services.html">Servicii</a>
+          <a href="contact.html" class="nav-link" data-page="contact.html">Contact</a>
+        </div>
+        <button class="hamburger md:hidden" id="hamburger-btn" aria-label="Meniu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu">
+      <a href="index.html" class="nav-link" data-page="index.html">Acasă</a>
+      <a href="about.html" class="nav-link" data-page="about.html">Despre</a>
+      <a href="services.html" class="nav-link" data-page="services.html">Servicii</a>
+      <a href="contact.html" class="nav-link" data-page="contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <header class="page-header">
+    <div class="fade-in">
+      <p class="text-blue-300 font-semibold text-sm uppercase tracking-widest mb-3">Să ne cunoaștem</p>
+      <h1 class="text-4xl md:text-5xl font-extrabold text-white mb-4">Contactează-ne</h1>
+      <p class="text-blue-100 text-lg max-w-xl mx-auto">Suntem disponibili să discutăm despre proiectul tău. Prima consultație este gratuită!</p>
+    </div>
+  </header>
+
+  <!-- CONTACT FORM + INFO -->
+  <section class="section-py bg-dark-radial-top">
+    <div class="section-px">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+
+        <!-- Form -->
+        <div class="fade-in">
+          <h2 class="text-2xl font-bold text-white mb-2">Trimite-ne un mesaj</h2>
+          <p class="text-blue-100 text-sm mb-8">Completează formularul și îți vom răspunde în maximum 24 de ore.</p>
+
+          <form id="contact-form" novalidate>
+            <div class="space-y-5">
+              <div>
+                <label class="form-label" for="contact-name">Nume complet *</label>
+                <input class="form-input" type="text" id="contact-name" name="name" placeholder="ex: Ion Popescu" required />
+              </div>
+              <div>
+                <label class="form-label" for="contact-email">Adresă de email *</label>
+                <input class="form-input" type="email" id="contact-email" name="email" placeholder="ex: ion@exemplu.ro" required />
+              </div>
+              <div>
+                <label class="form-label" for="contact-phone">Număr de telefon</label>
+                <input class="form-input" type="tel" id="contact-phone" name="phone" placeholder="ex: 0740 000 000" />
+              </div>
+              <div>
+                <label class="form-label" for="contact-message">Mesajul tău *</label>
+                <textarea class="form-input" id="contact-message" name="message" rows="5" placeholder="Descrie proiectul sau întrebarea ta..." required></textarea>
+              </div>
+              <p class="text-gray-500 text-xs">* Câmpuri obligatorii. Datele tale sunt protejate conform <a href="gdpr.html" class="text-blue-400 hover:underline">Politicii GDPR</a>.</p>
+              <button type="submit" class="btn-primary w-full text-center">Trimite mesajul →</button>
+            </div>
+          </form>
+
+          <!-- Success Message -->
+          <div id="success-message">
+            <div class="text-4xl mb-4">✅</div>
+            <h3 class="text-white font-bold text-xl mb-2">Mesaj trimis cu succes!</h3>
+            <p class="text-blue-100 text-sm">Mulțumim că ne-ai contactat! Echipa MIDAS îți va răspunde în maximum 24 de ore.</p>
+          </div>
+        </div>
+
+        <!-- Contact Info Cards -->
+        <div class="space-y-4 fade-in">
+          <h2 class="text-2xl font-bold text-white mb-6">Informații de contact</h2>
+          <div class="info-card flex items-start gap-4">
+            <div class="feature-icon flex-shrink-0" style="width:48px;height:48px;font-size:1.25rem;">📍</div>
+            <div>
+              <h3 class="text-white font-semibold mb-1">Adresă</h3>
+              <p class="text-blue-100 text-sm">Str Rulmentului, nr 4A<br />Suceava, România</p>
+            </div>
+          </div>
+          <div class="info-card flex items-start gap-4">
+            <div class="feature-icon flex-shrink-0" style="width:48px;height:48px;font-size:1.25rem;">📞</div>
+            <div>
+              <h3 class="text-white font-semibold mb-1">Telefon</h3>
+              <a href="tel:0746685566" class="text-blue-300 hover:text-blue-200 text-sm font-medium">0746 685 566</a>
+            </div>
+          </div>
+          <div class="info-card flex items-start gap-4">
+            <div class="feature-icon flex-shrink-0" style="width:48px;height:48px;font-size:1.25rem;">✉️</div>
+            <div>
+              <h3 class="text-white font-semibold mb-1">Email</h3>
+              <a href="mailto:PUNTEASTEFAN@GMAIL.COM" class="text-blue-300 hover:text-blue-200 text-sm font-medium">punteastefan@gmail.com</a>
+            </div>
+          </div>
+          <div class="info-card flex items-start gap-4">
+            <div class="feature-icon flex-shrink-0" style="width:48px;height:48px;font-size:1.25rem;">🕐</div>
+            <div>
+              <h3 class="text-white font-semibold mb-1">Program de lucru</h3>
+              <p class="text-blue-100 text-sm">Luni - Vineri: 09:00 - 17:00<br /><span class="text-gray-500">Sâmbătă - Duminică: Închis</span></p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- MAP -->
+  <section class="section-py bg-dark-radial-bottom">
+    <div class="section-px">
+      <div class="fade-in">
+        <h2 class="text-2xl font-bold text-white mb-6 text-center">Unde ne găsești</h2>
+        <div class="map-placeholder rounded-xl overflow-hidden">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2666.0!2d26.2584!3d47.6514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4734fc66bc22a615%3A0x4a9a11111b1f3a10!2sStr.+Rulmentului%2C+Suceava!5e0!3m2!1sro!2sro!4v1700000000000!5m2!1sro!2sro"
+            width="100%"
+            height="350"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Locație MIDAS Suceava"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CONTACT US -->
+  <section class="section-py bg-dark-radial-top">
+    <div class="section-px">
+      <div class="text-center mb-12 fade-in">
+        <p class="text-blue-300 font-semibold text-sm uppercase tracking-widest mb-2">Beneficii</p>
+        <h2 class="text-3xl font-bold text-white">De ce să ne contactezi?</h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="card-dark p-6 text-center fade-in stagger-fade">
+          <div class="text-4xl mb-4">⚡</div>
+          <h3 class="text-white font-bold text-lg mb-2">Răspuns Rapid</h3>
+          <p class="text-blue-100 text-sm">Îți răspundem în maximum 24 de ore la orice mesaj sau cerere de ofertă.</p>
+        </div>
+        <div class="card-dark p-6 text-center fade-in stagger-fade">
+          <div class="text-4xl mb-4">🎁</div>
+          <h3 class="text-white font-bold text-lg mb-2">Consultație Gratuită</h3>
+          <p class="text-blue-100 text-sm">Prima ședință de consultanță este complet gratuită, fără obligații.</p>
+        </div>
+        <div class="card-dark p-6 text-center fade-in stagger-fade">
+          <div class="text-4xl mb-4">🤝</div>
+          <h3 class="text-white font-bold text-lg mb-2">Fără Contracte Ascunse</h3>
+          <p class="text-blue-100 text-sm">Transparență totală în prețuri și condiții. Îți explicăm tot înainte de a semna.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="pt-16 pb-6">
+    <div class="section-px">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 mb-12">
+        <div>
+          <h3 class="text-white font-extrabold text-xl mb-4"><span class="gradient-text">MIDAS</span></h3>
+          <p class="text-gray-400 text-sm leading-relaxed mb-4">Compania ta de IT din Suceava. Construim site-uri, chatboti și automatizări care îți transformă afacerea.</p>
+          <p class="text-gray-500 text-xs">© 2024 MIDAS - Consultantul tau virtual. Toate drepturile rezervate.</p>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-4 uppercase tracking-wide text-sm">Navigare Rapidă</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="index.html">Acasă</a></li>
+            <li><a href="about.html">Despre Noi</a></li>
+            <li><a href="services.html">Servicii</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-4 uppercase tracking-wide text-sm">Contact</h4>
+          <ul class="space-y-2 text-sm text-gray-400">
+            <li>📍 Str Rulmentului, nr 4A, Suceava</li>
+            <li>📞 <a href="tel:0746685566">0746 685 566</a></li>
+            <li>✉️ <a href="mailto:PUNTEASTEFAN@GMAIL.COM">punteastefan@gmail.com</a></li>
+            <li>🕐 Luni - Vineri: 09:00 - 17:00</li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 pt-6 flex flex-wrap gap-4 text-xs text-gray-500">
+        <a href="gdpr.html" class="hover:text-blue-400">Politica GDPR</a>
+        <a href="cookies.html" class="hover:text-blue-400">Politica Cookies</a>
+        <a href="termeni.html" class="hover:text-blue-400">Termeni și Condiții</a>
+        <a href="https://anpc.ro/" target="_blank" rel="noopener" class="hover:text-blue-400">A.N.P.C</a>
+      </div>
+    </div>
+  </footer>
+
+  <button id="back-to-top" aria-label="Înapoi sus">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7"/>
+    </svg>
+  </button>
+
+  <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Acasă | MIDAS - Consultantul tau virtual</title>
+  <meta name="description" content="MIDAS este compania ta de IT din Suceava specializată în chatboti, site-uri și automatizări inteligente pentru afacerea ta." />
+  <meta property="og:title" content="Acasă | MIDAS - Consultantul tau virtual" />
+  <meta property="og:description" content="MIDAS este compania ta de IT din Suceava specializată în chatboti, site-uri și automatizări inteligente pentru afacerea ta." />
+  <meta property="og:image" content="https://i.pinimg.com/1200x/57/9c/79/579c794e59c968ee4bbd2e570954ec44.jpg" />
+  <meta property="og:type" content="website" />
+  <meta name="robots" content="index, follow" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: "#1E3A8A",
+            secondary: "#3B6FD4",
+            accent: "#0d2260",
+            light: "#f5f5f5",
+            dark: "#0c0e13",
+          },
+          backgroundImage: {
+            "dark-radial-right": "radial-gradient(at center right, #0d2260 10%, #020307 75%)",
+            "dark-radial-left": "radial-gradient(at center left, #0d2260 10%, #020307 75%)",
+            "dark-radial-top": "radial-gradient(at top center, #0d2260 10%, #020307 75%)",
+            "dark-radial-bottom": "radial-gradient(at bottom center, #0d2260 10%, #020307 75%)",
+            "dark-silver-radial": "radial-gradient(at center, #1a1a1a 10%, #2a2a2a 90%)",
+            "card-dark": "linear-gradient(180deg, #1a1f2b 0%, #0c0e13 100%)",
+            "card-dark-hover": "linear-gradient(180deg, #2a3040 0%, #1a1f2b 100%)",
+            "primary-blend": "linear-gradient(135deg, #1E3A8A 0%, #020307 100%)",
+            "accent-blend": "linear-gradient(135deg, #0d2260 0%, #000000 100%)",
+          },
+        },
+      },
+    };
+  </script>
+</head>
+<body class="bg-dark text-light">
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <!-- Logo / Brand -->
+        <a href="index.html" class="text-white font-extrabold text-xl tracking-tight">
+          <span class="gradient-text">MIDAS</span>
+          <span class="text-white font-light text-sm ml-2 hidden sm:inline">Consultantul tau virtual</span>
+        </a>
+        <!-- Desktop Nav -->
+        <div class="hidden md:flex items-center gap-1">
+          <a href="index.html" class="nav-link" data-page="index.html">Acasă</a>
+          <a href="about.html" class="nav-link" data-page="about.html">Despre</a>
+          <a href="services.html" class="nav-link" data-page="services.html">Servicii</a>
+          <a href="contact.html" class="nav-link" data-page="contact.html">Contact</a>
+        </div>
+        <!-- Hamburger -->
+        <button class="hamburger md:hidden" id="hamburger-btn" aria-label="Meniu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu">
+      <a href="index.html" class="nav-link" data-page="index.html">Acasă</a>
+      <a href="about.html" class="nav-link" data-page="about.html">Despre</a>
+      <a href="services.html" class="nav-link" data-page="services.html">Servicii</a>
+      <a href="contact.html" class="nav-link" data-page="contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="hero-section">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="fade-in">
+        <p class="text-blue-300 font-semibold text-sm uppercase tracking-widest mb-4">Bine ai venit la</p>
+        <h1 class="text-5xl md:text-7xl font-extrabold text-white mb-6 leading-tight">
+          <span class="gradient-text">MIDAS</span><br />
+          <span class="text-3xl md:text-4xl font-light text-blue-100">Consultantul tău virtual</span>
+        </h1>
+        <p class="text-lg md:text-xl text-blue-100 mb-10 max-w-2xl mx-auto leading-relaxed">
+          Transformăm ideile tale în soluții digitale puternice. Site-uri profesionale, chatboti inteligenți și automatizări care îți cresc afacerea.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="services.html" class="btn-primary">Descoperă Serviciile</a>
+          <a href="contact.html" class="btn-secondary">Contactează-ne</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PARTNERS / CLIENTS CAROUSEL -->
+  <section class="section-py bg-dark-radial-top">
+    <div class="section-px">
+      <div class="text-center mb-10 fade-in">
+        <p class="text-blue-300 font-semibold text-sm uppercase tracking-widest mb-2">Parteneri & Clienți</p>
+        <h2 class="text-2xl font-bold text-white">Companii care au ales MIDAS</h2>
+      </div>
+    </div>
+    <div class="carousel-wrapper px-8">
+      <div class="carousel-track">
+        <div class="partner-item">TechRomania SRL</div>
+        <div class="partner-item">Digital Suceava</div>
+        <div class="partner-item">Smart Retail SRL</div>
+        <div class="partner-item">Agro Nord SRL</div>
+        <div class="partner-item">MedCare Clinic</div>
+        <div class="partner-item">LogiTrans SA</div>
+        <div class="partner-item">CasaConfort SRL</div>
+        <div class="partner-item">EduNext Romania</div>
+        <div class="partner-item">ProEvent Agency</div>
+        <div class="partner-item">FinTrust Consulting</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS / COUNTERS -->
+  <section class="section-py bg-dark-radial-bottom">
+    <div class="section-px">
+      <div class="text-center mb-12 fade-in">
+        <p class="text-blue-300 font-semibold text-sm uppercase tracking-widest mb-2">Rezultate Reale</p>
+        <h2 class="text-3xl md:text-4xl font-bold text-white">Cifrele vorbesc de la sine</h2>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+        <div class="card-dark p-6 text-center fade-in stagger-fade">
+          <div class="counter-num" data-target="5">0</div>
+          <p class="text-blue-300 font-semibold text-sm mt-2 uppercase tracking-wide">Ani de experiență</p>
+        </div>
+        <div class="card-dark p-6 text-center fade-in stagger-fade">
+          <div class="counter-num" data-target="120">0</div>
+          <p class="text-blue-300 font-semibold text-sm mt-2 uppercase tracking-wide">Clienți mulțumiți</p>
+        </div>
+        <div class="card-dark p-6 text-center fade-in stagger-fade">
+          <div class="counter-num" data-target="350">0</div>
+          <p class="text-blue-300 font-semibold text-sm mt-2 uppercase tracking-wide">Proiecte finalizate</p>
+        </div>
+        <div class="card-dark p-6 text-center fade-in stagger-fade">
+          <div class="counter-num" data-target="98">0</div>
+          <p class="text-blue-300 font-semibold text-sm mt-2 uppercase tracking-wide">% satisfacție</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE US -->
+  <section class="section-py bg-dark-radial-top">
+    <div class="section-px">
+      <div class="text-center mb-12 fade-in">
+        <p class="text-blue-300 font-semibold text-sm uppercase tracking-widest mb-2">Avantajele noastre</p>
+        <h2 class="text-3xl md:text-4xl font-bold text-white">De ce să alegi MIDAS?</h2>
+        <p class="text-blue-100 mt-4 max-w-xl mx-auto">Oferim soluții IT complete, adaptate nevoilor tale, cu suport dedicat și rezultate măsurabile.</p>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="card-dark p-6 fade-in stagger-fade">
+          <div class="feature-icon">🚀</div>
+          <h3 class="text-white font-bold text-lg mb-2">Livrare Rapidă</h3>
+          <p class="text-blue-100 text-sm">Proiectele tale sunt livrate la timp, fără compromisuri de calitate.</p>
+        </div>
+        <div class="card-dark p-6 fade-in stagger-fade">
+          <div class="feature-icon">🤖</div>
+          <h3 class="text-white font-bold text-lg mb-2">Tehnologie Avansată</h3>
+          <p class="text-blue-100 text-sm">Folosim cele mai moderne tehnologii AI și automatizare disponibile.</p>
+        </div>
+        <div class="card-dark p-6 fade-in stagger-fade">
+          <div class="feature-icon">🛡️</div>
+          <h3 class="text-white font-bold text-lg mb-2">Siguranță & GDPR</h3>
+          <p class="text-blue-100 text-sm">Toate soluțiile noastre respectă standardele europene de securitate a datelor.</p>
+        </div>
+        <div class="card-dark p-6 fade-in stagger-fade">
+          <div class="feature-icon">💬</div>
+          <h3 class="text-white font-bold text-lg mb-2">Suport Dedicat</h3>
+          <p class="text-blue-100 text-sm">Echipa noastră este disponibilă să te ajute la orice pas al procesului.</p>
+        </div>
+        <div class="card-dark p-6 fade-in stagger-fade">
+          <div class="feature-icon">📈</div>
+          <h3 class="text-white font-bold text-lg mb-2">Rezultate Măsurabile</h3>
+          <p class="text-blue-100 text-sm">Fiecare soluție este optimizată pentru a-ți aduce creștere reală și verificabilă.</p>
+        </div>
+        <div class="card-dark p-6 fade-in stagger-fade">
+          <div class="feature-icon">💡</div>
+          <h3 class="text-white font-bold text-lg mb-2">Soluții Personalizate</h3>
+          <p class="text-blue-100 text-sm">Nu lucrăm cu șabloane generice — fiecare proiect este unic și adaptat la tine.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="section-py bg-dark-radial-bottom">
+    <div class="section-px">
+      <div class="text-center mb-12 fade-in">
+        <p class="text-blue-300 font-semibold text-sm uppercase tracking-widest mb-2">Testimoniale</p>
+        <h2 class="text-3xl md:text-4xl font-bold text-white">Ce spun clienții noștri</h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="card-dark p-6 fade-in stagger-fade">
+          <div class="stars text-xl mb-3">★★★★★</div>
+          <p class="text-blue-100 text-sm leading-relaxed mb-4">"MIDAS ne-a creat un chatbot care răspunde automat clienților noștri 24/7. Economisim câteva ore pe zi și satisfacția clienților a crescut vizibil."</p>
+          <div class="flex items-center gap-3">
+            <div class="team-avatar" style="width:42px;height:42px;font-size:1rem;">AM</div>
+            <div>
+              <p class="text-white font-semibold text-sm">Andrei Mihalache</p>
+              <p class="text-blue-300 text-xs">Director, Smart Retail SRL</p>
+            </div>
+          </div>
+        </div>
+        <div class="card-dark p-6 fade-in stagger-fade">
+          <div class="stars text-xl mb-3">★★★★★</div>
+          <p class="text-blue-100 text-sm leading-relaxed mb-4">"Site-ul construit de MIDAS este rapid, elegant și ne-a adus cu 40% mai mulți clienți online. Recomand cu căldură oricărei afaceri locale."</p>
+          <div class="flex items-center gap-3">
+            <div class="team-avatar" style="width:42px;height:42px;font-size:1rem;">IG</div>
+            <div>
+              <p class="text-white font-semibold text-sm">Ioana Grigorescu</p>
+              <p class="text-blue-300 text-xs">Administrator, CasaConfort SRL</p>
+            </div>
+          </div>
+        </div>
+        <div class="card-dark p-6 fade-in stagger-fade">
+          <div class="stars text-xl mb-3">★★★★★</div>
+          <p class="text-blue-100 text-sm leading-relaxed mb-4">"Automatizările implementate de echipa MIDAS ne-au redus costurile operaționale cu 30%. Profesioniști adevărați, cu răbdare și expertiză reală."</p>
+          <div class="flex items-center gap-3">
+            <div class="team-avatar" style="width:42px;height:42px;font-size:1rem;">CP</div>
+            <div>
+              <p class="text-white font-semibold text-sm">Constantin Popa</p>
+              <p class="text-blue-300 text-xs">CEO, LogiTrans SA</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- READY TO START CTA -->
+  <section class="section-py bg-primary-blend">
+    <div class="section-px text-center fade-in">
+      <h2 class="text-3xl md:text-5xl font-extrabold text-white mb-4">Ești gata să îți transformi afacerea?</h2>
+      <p class="text-blue-200 text-lg mb-8 max-w-2xl mx-auto">Hai să discutăm despre nevoile tale digitale. Prima consultație este gratuită!</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="contact.html" class="btn-primary">Programează o consultație</a>
+        <a href="services.html" class="btn-secondary">Vezi serviciile</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section-py bg-dark-radial-top">
+    <div class="section-px">
+      <div class="text-center mb-12 fade-in">
+        <p class="text-blue-300 font-semibold text-sm uppercase tracking-widest mb-2">Întrebări Frecvente</p>
+        <h2 class="text-3xl md:text-4xl font-bold text-white">Ai întrebări? Avem răspunsuri.</h2>
+      </div>
+      <div class="max-w-3xl mx-auto">
+        <div class="faq-item fade-in">
+          <button class="faq-question">
+            Ce tipuri de site-uri construiți?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            Construim site-uri de prezentare, magazine online, platforme de rezervări, landing pages și site-uri corporative. Fiecare proiect este personalizat complet pentru nevoile clientului, cu design modern și optimizare SEO inclusă.
+          </div>
+        </div>
+        <div class="faq-item fade-in">
+          <button class="faq-question">
+            Cum funcționează un chatbot și cum îmi poate ajuta afacerea?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            Un chatbot este un asistent virtual care răspunde automat la întrebările clienților tăi, 24 de ore din 24. Poate prelua comenzi, programa întâlniri, oferi suport tehnic și colecta date despre clienți — totul fără intervenție umană.
+          </div>
+        </div>
+        <div class="faq-item fade-in">
+          <button class="faq-question">
+            Cât durează realizarea unui proiect?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            Un site de prezentare simplu poate fi gata în 5-7 zile lucrătoare. Un chatbot personalizat necesită 1-2 săptămâni, iar automatizările complexe pot dura între 2 și 6 săptămâni, în funcție de complexitate.
+          </div>
+        </div>
+        <div class="faq-item fade-in">
+          <button class="faq-question">
+            Oferiți suport după livrarea proiectului?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            Da, absolut. Includem o perioadă de garanție de 30 de zile cu suport gratuit. Ulterior, oferim pachete de mentenanță lunare pentru a ne asigura că soluția ta funcționează perfect în permanență.
+          </div>
+        </div>
+        <div class="faq-item fade-in">
+          <button class="faq-question">
+            Care sunt prețurile serviciilor voastre?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            Prețurile variază în funcție de complexitatea proiectului. Un site de prezentare pornește de la 500 RON, chatboții de la 800 RON, iar automatizările se cotează individual. Contactează-ne pentru o ofertă personalizată și gratuită.
+          </div>
+        </div>
+        <div class="faq-item fade-in">
+          <button class="faq-question">
+            Lucrați cu clienți din toată România sau doar din Suceava?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            Deși suntem bazați în Suceava, colaborăm cu clienți din întreaga Românie și din diaspora. Toate întâlnirile se pot desfășura online prin video call, astfel că distanța nu este niciodată un obstacol.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="section-py bg-dark-radial-bottom">
+    <div class="section-px text-center fade-in">
+      <div class="card-dark p-10 max-w-2xl mx-auto">
+        <div class="text-4xl mb-4">💬</div>
+        <h2 class="text-2xl md:text-3xl font-bold text-white mb-3">Nu ai găsit răspunsul tău?</h2>
+        <p class="text-blue-100 mb-6">Echipa noastră este disponibilă să răspundă oricărei întrebări. Scrie-ne direct!</p>
+        <a href="contact.html" class="btn-primary">Trimite o întrebare</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="pt-16 pb-6">
+    <div class="section-px">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 mb-12">
+        <!-- Brand -->
+        <div>
+          <h3 class="text-white font-extrabold text-xl mb-4"><span class="gradient-text">MIDAS</span></h3>
+          <p class="text-gray-400 text-sm leading-relaxed mb-4">Compania ta de IT din Suceava. Construim site-uri, chatboti și automatizări care îți transformă afacerea.</p>
+          <p class="text-gray-500 text-xs">© 2024 MIDAS - Consultantul tau virtual. Toate drepturile rezervate.</p>
+        </div>
+        <!-- Quick Links -->
+        <div>
+          <h4 class="text-white font-semibold mb-4 uppercase tracking-wide text-sm">Navigare Rapidă</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="index.html">Acasă</a></li>
+            <li><a href="about.html">Despre Noi</a></li>
+            <li><a href="services.html">Servicii</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <!-- Contact -->
+        <div>
+          <h4 class="text-white font-semibold mb-4 uppercase tracking-wide text-sm">Contact</h4>
+          <ul class="space-y-2 text-sm text-gray-400">
+            <li>📍 Str Rulmentului, nr 4A, Suceava</li>
+            <li>📞 <a href="tel:0746685566">0746 685 566</a></li>
+            <li>✉️ <a href="mailto:PUNTEASTEFAN@GMAIL.COM">punteastefan@gmail.com</a></li>
+            <li>🕐 Luni - Vineri: 09:00 - 17:00</li>
+          </ul>
+        </div>
+      </div>
+      <!-- Legal row -->
+      <div class="border-t border-gray-800 pt-6 flex flex-wrap gap-4 text-xs text-gray-500">
+        <a href="gdpr.html" class="hover:text-blue-400">Politica GDPR</a>
+        <a href="cookies.html" class="hover:text-blue-400">Politica Cookies</a>
+        <a href="termeni.html" class="hover:text-blue-400">Termeni și Condiții</a>
+        <a href="https://anpc.ro/" target="_blank" rel="noopener" class="hover:text-blue-400">A.N.P.C</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BACK TO TOP -->
+  <button id="back-to-top" aria-label="Înapoi sus">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7"/>
+    </svg>
+  </button>
+
+  <script src="main.js"></script>
+</body>
+</html>
