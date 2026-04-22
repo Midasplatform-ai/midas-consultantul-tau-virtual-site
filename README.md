@@ -1,6 +1,6 @@
 # MIDAS - Consultantul tau virtual
 
-🌐 **Live:** [https://midas-consultantul-tau-virtual-1776803807616.netlify.app](https://midas-consultantul-tau-virtual-1776803807616.netlify.app)
+🌐 **Live:** [https://midas-consultantul-tau-virtual-1776828642660.netlify.app](https://midas-consultantul-tau-virtual-1776828642660.netlify.app)
 
 Site generat cu **SiteForge** — HTML5 + Tailwind CSS CDN + Vanilla JavaScript.
 Nu necesită build step — fișierele se servesc direct.
